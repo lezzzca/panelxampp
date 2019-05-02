@@ -8,7 +8,6 @@
 
 require_once '../vendor/autoload.php';
 
-use Clases\DataBase;
 use \Clases\ListaDeProyectos as ListaDeProyectosNamed;
 
 $listaProyectos = ListaDeProyectosNamed::getInstance();

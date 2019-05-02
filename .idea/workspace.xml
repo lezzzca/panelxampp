@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4f3395f7-7e68-4751-be58-bdf15fd99da4" name="Default Changelist" comment="">
+    <list default="true" id="4f3395f7-7e68-4751-be58-bdf15fd99da4" name="Default Changelist" comment="Se modifico el llamado de la funcion cargar proyectos en la clase Lista de proyectos y se acomodo las direcciones de las rutas con el _DIR_">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/class/DB_Proyectos.php" beforeDir="false" afterPath="$PROJECT_DIR$/class/DB_Proyectos.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/class/Gestor_de_archivos.php" beforeDir="false" afterPath="$PROJECT_DIR$/class/Gestor_de_archivos.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/class/Proyecto.php" beforeDir="false" afterPath="$PROJECT_DIR$/class/Proyecto.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/class/ListaDeProyectos.php" beforeDir="false" afterPath="$PROJECT_DIR$/class/ListaDeProyectos.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/secciones/lista_proyectos.php" beforeDir="false" afterPath="$PROJECT_DIR$/secciones/lista_proyectos.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,8 +60,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="13" column="43" lean-forward="true" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
+            <state relative-caret-position="571">
+              <caret line="143" column="17" lean-forward="true" selection-start-line="143" selection-start-column="17" selection-end-line="143" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/funciones.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="46">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -80,8 +89,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/secciones/lista_proyectos.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="571">
-              <caret line="106" selection-start-line="106" selection-end-line="106" />
+            <state relative-caret-position="131">
+              <caret line="94" column="48" selection-start-line="94" selection-start-column="48" selection-end-line="94" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/class/ListaDeProyectos.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="155">
+              <caret line="65" column="26" selection-start-line="65" selection-start-column="26" selection-end-line="65" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -89,8 +107,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/class/Gestor_de_archivos.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="68" column="5" selection-start-line="68" selection-start-column="5" selection-end-line="68" selection-end-column="5" />
+            <state relative-caret-position="131">
+              <caret line="29" column="57" selection-start-line="29" selection-start-column="57" selection-end-line="29" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -142,11 +160,8 @@
         <option value="$PROJECT_DIR$/class/DataBase.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" />
-        <option value="$PROJECT_DIR$/class/ListaDeProyectos.php" />
-        <option value="$PROJECT_DIR$/class/ListaDeProyectos.php" />
         <option value="$PROJECT_DIR$/formularios/form_abrir.php" />
         <option value="$PROJECT_DIR$/f.html" />
-        <option value="$PROJECT_DIR$/secciones/lista_proyectos.php" />
         <option value="$PROJECT_DIR$/config/config.php" />
         <option value="$PROJECT_DIR$/css/mauDesign.css" />
         <option value="$PROJECT_DIR$/js/metodos.js" />
@@ -160,6 +175,9 @@
         <option value="$PROJECT_DIR$/class/Proyecto.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/secciones/lista_proyectos.php" />
+        <option value="$PROJECT_DIR$/class/ListaDeProyectos.php" />
+        <option value="$PROJECT_DIR$/class/ListaDeProyectos.php" />
         <option value="$PROJECT_DIR$/class/Gestor_de_archivos.php" />
         <option value="$PROJECT_DIR$/class/Gestor_de_archivos.php" />
       </list>
@@ -207,46 +225,6 @@
             <path>
               <item name="panel_proyectos" type="b2602c69:ProjectViewProjectNode" />
               <item name="panel_proyectos" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="panel_proyectos" type="b2602c69:ProjectViewProjectNode" />
-              <item name="panel_proyectos" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="panel_proyectos" type="b2602c69:ProjectViewProjectNode" />
-              <item name="panel_proyectos" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="panel_proyectos" type="b2602c69:ProjectViewProjectNode" />
-              <item name="panel_proyectos" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="addons" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="panel_proyectos" type="b2602c69:ProjectViewProjectNode" />
-              <item name="panel_proyectos" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="addons" type="462c0819:PsiDirectoryNode" />
-              <item name="datatables.js" type="620a8d5e:NestingTreeNode" />
-            </path>
-            <path>
-              <item name="panel_proyectos" type="b2602c69:ProjectViewProjectNode" />
-              <item name="panel_proyectos" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="addons" type="462c0819:PsiDirectoryNode" />
-              <item name="datatables-select.js" type="620a8d5e:NestingTreeNode" />
-            </path>
-            <path>
-              <item name="panel_proyectos" type="b2602c69:ProjectViewProjectNode" />
-              <item name="panel_proyectos" type="462c0819:PsiDirectoryNode" />
-              <item name="php" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="panel_proyectos" type="b2602c69:ProjectViewProjectNode" />
-              <item name="panel_proyectos" type="462c0819:PsiDirectoryNode" />
               <item name="secciones" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -260,7 +238,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="database.console.LAST_STATE" value="true" />
+    <property name="database.console.LAST_STATE" value="false" />
     <property name="js.buildTools.grunt.grunt-cli.package" value="" />
     <property name="js.buildTools.gulp.gulp_package_dir" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -354,20 +332,21 @@
       <workItem from="1555959868077" duration="1365000" />
       <workItem from="1556046320166" duration="4158000" />
       <workItem from="1556160478003" duration="713000" />
-      <workItem from="1556829509130" duration="4868000" />
+      <workItem from="1556829509130" duration="6076000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102985000" />
+    <option name="totallyTimeSpent" value="104193000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20604026" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20604026" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Messages" visible="true" weight="0.32941177" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.23235294" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32941177" />
@@ -376,12 +355,12 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32941177" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="PHP-CGI Server" order="10" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.55588233" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
-      <window_info anchor="bottom" id="Database Console" order="13" visible="true" weight="0.32941177" />
+      <window_info anchor="bottom" id="Database Console" order="13" weight="0.32941177" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -414,19 +393,16 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Se modifico el llamado de la funcion cargar proyectos en la clase Lista de proyectos y se acomodo las direcciones de las rutas con el _DIR_" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se modifico el llamado de la funcion cargar proyectos en la clase Lista de proyectos y se acomodo las direcciones de las rutas con el _DIR_" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/res/cat-solid.svg" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/f8067ff4-873e-4cdf-8ad4-28a1155bbad5/console.sql" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/3c90d995-1cf3-4d42-9953-baa8fe0d8523/console.sql" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/7f721a0b-5e50-4526-8eb8-673845f0ace3/console.sql" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/677d773d-ae07-4e82-8b77-8594c1e9b728/console.sql" />
-    <entry file="file://$PROJECT_DIR$/php/funciones.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/class/DataBase.php" />
     <entry file="das://677d773d-ae07-4e82-8b77-8594c1e9b728/schema/proyectos/table/tabla_proyectos" />
     <entry file="file://$PROJECT_DIR$/vendor/composer/autoload_psr4.php">
@@ -467,9 +443,6 @@
           <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/class/ListaDeProyectos.php">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/css/mauDesign.css">
       <provider selected="true" editor-type-id="text-editor">
@@ -532,13 +505,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/secciones/lista_proyectos.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="571">
-          <caret line="106" selection-start-line="106" selection-end-line="106" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/class/DB_Proyectos.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -568,15 +534,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="13" column="43" lean-forward="true" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
+        <state relative-caret-position="571">
+          <caret line="143" column="17" lean-forward="true" selection-start-line="143" selection-start-column="17" selection-end-line="143" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/funciones.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/secciones/lista_proyectos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="94" column="48" selection-start-line="94" selection-start-column="48" selection-end-line="94" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class/ListaDeProyectos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="65" column="26" selection-start-line="65" selection-start-column="26" selection-end-line="65" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/class/Gestor_de_archivos.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="68" column="5" selection-start-line="68" selection-start-column="5" selection-end-line="68" selection-end-column="5" />
+        <state relative-caret-position="131">
+          <caret line="29" column="57" selection-start-line="29" selection-start-column="57" selection-end-line="29" selection-end-column="57" />
         </state>
       </provider>
     </entry>

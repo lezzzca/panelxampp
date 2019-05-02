@@ -10,23 +10,8 @@ namespace Clases;
 
 class Gestor_de_archivos{
 
-    const CARPETA_PADRE = '../proyectos';
+    const CARPETA_PADRE = __DIR__.'/../../proyectos';
 
-    static public function cargarCarpeta(){
-        if(is_dir(self::CARPETA_PADRE)):
-            if($recurso = opendir(self::CARPETA_PADRE)):
-                echo '<ul>';
-                while($file = readdir($recurso)):
-                    if($file!='.' && $file!='..'):
-                    echo "<li>$file</li>";
-                    endif;
-                endwhile;
-                echo '</ul>';
-             endif;
-        else:
-            return false;
-        endif;
-    } // esto es solo para probar la carpeta padre
 
     static public function obtenerModificado($carpeta){
         return filemtime(self::CARPETA_PADRE.'/'.$carpeta);
@@ -42,7 +27,7 @@ class Gestor_de_archivos{
 
         if(!is_dir(self::CARPETA_PADRE."/$nombre_carpeta")):
             mkdir(self::CARPETA_PADRE."/$nombre_carpeta");
-            copy('../res/generico.lez','.'/index.'.$tipo');
+            copy('../res/generico.lez','.'/'index.'.$tipo);
             return true;
         else:
             return false;
@@ -50,7 +35,7 @@ class Gestor_de_archivos{
     }
 
     public static function configIni(){
-        return parse_ini_file("config.ini",true);
+        return parse_ini_file(__DIR__."/../config.ini",true);
     }
 
     public static function ponerEnMinusculas($text){
