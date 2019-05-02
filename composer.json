@@ -1,0 +1,20 @@
+{
+  "name": "proyectos/administradoraryectos",
+  "description": "Proyecto con el objetivo de administrar y manipular los proyectos web",
+  "minimum-stability": "dev",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "lezzzca",
+      "email": "lezzzca@gmail.com"
+    }
+  ],
+  "require": {
+      "ext-pdo": "*"
+  },
+  "autoload": {
+      "psr-4": {
+        "Clases\\" : "class"
+      }
+  }
+}
