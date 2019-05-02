@@ -8,7 +8,7 @@
 
 namespace Clases;
 
-use Clases\Gestor_de_archivos;
+use ArrayObject;
 use PDO;
 use PDOException;
 
@@ -46,6 +46,23 @@ class DB_Proyectos{
         endif;
 
         return self::$instance;
+    }
+
+    public static function recuperarProyectos(){
+        $db = self::getConection();
+
+        $consulta = "SELECT * FROM proyectos.proyectos";
+
+        $stat = $db->prepare($consulta);
+        $stat->execute();
+
+        $array = new ArrayObject();
+
+        while ($proyecto = $stat->fetchObject()):
+            $array->append(new Proyecto($proyecto->id_proyecto,$proyecto->nombre,$proyecto->descripcion));
+        endwhile;
+
+        return $array;
     }
 
 }

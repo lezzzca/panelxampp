@@ -10,11 +10,11 @@ namespace Clases;
 
 class Gestor_de_archivos{
 
-    static public $CARPETA_PADRE = '../../proyectos';
+    const CARPETA_PADRE = '../proyectos';
 
     static public function cargarCarpeta(){
-        if(is_dir(self::$CARPETA_PADRE)):
-            if($recurso = opendir(self::$CARPETA_PADRE)):
+        if(is_dir(self::CARPETA_PADRE)):
+            if($recurso = opendir(self::CARPETA_PADRE)):
                 echo '<ul>';
                 while($file = readdir($recurso)):
                     if($file!='.' && $file!='..'):
@@ -29,18 +29,19 @@ class Gestor_de_archivos{
     } // esto es solo para probar la carpeta padre
 
     static public function obtenerModificado($carpeta){
-       return filemtime(self::$CARPETA_PADRE."/$carpeta");
+        return filemtime(self::CARPETA_PADRE.'/'.$carpeta);
+        //return filemtime(self::$CARPETA_PADRE.$carpeta);
     }
 
     static public function test($algo){
-        return self::$CARPETA_PADRE."----$algo";
+        return self::CARPETA_PADRE."----$algo";
     }
 
     static public function crearCarpetaProyecto($nombre_carpeta,$tipo){
-        chmod(self::$CARPETA_PADRE,777);
+        chmod(self::CARPETA_PADRE,777);
 
-        if(!is_dir(self::$CARPETA_PADRE."/$nombre_carpeta")):
-            mkdir(self::$CARPETA_PADRE."/$nombre_carpeta");
+        if(!is_dir(self::CARPETA_PADRE."/$nombre_carpeta")):
+            mkdir(self::CARPETA_PADRE."/$nombre_carpeta");
             copy('../res/generico.lez','.'/index.'.$tipo');
             return true;
         else:
@@ -52,8 +53,18 @@ class Gestor_de_archivos{
         return parse_ini_file("config.ini",true);
     }
 
+    public static function ponerEnMinusculas($text){
+        return strtolower($text);
+    }
 
+    public static function ponerMayusculas($texto){
+        return strtoupper($texto);
+    }
 
-
-
+    public static function cabiarEspaciosPorGuiones($texto){
+        return str_replace(' ','_',$texto);
+    }
+    public static function cambiarGuionesPorEspacios($texto){
+        return str_replace('_',' ',$texto);
+    }
 }

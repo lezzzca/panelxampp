@@ -30,7 +30,9 @@ class Proyecto
     }
 
     private function crearCarpeta(){
-        return str_replace(' ','_',strtolower($this->nombre));
+        $carpeta = Gestor_de_archivos::ponerEnMinusculas($this->nombre);
+        $carpeta = Gestor_de_archivos::cabiarEspaciosPorGuiones($carpeta);
+        return $carpeta;
     }
 
     /**
@@ -55,14 +57,6 @@ class Proyecto
     public function getCarpeta()
     {
         return $this->carpeta;
-    }
-
-    /**
-     * @param string $carpeta
-     */
-    public function setCarpeta($carpeta)
-    {
-        $this->carpeta = $carpeta;
     }
 
     /**

@@ -8,6 +8,14 @@
     use Clases\DB_Proyectos;
     $db = DB_Proyectos::getConection();
 
+    //echo \Clases\Gestor_de_archivos::$CARPETA_PADRE;
+    //var_dump(DB_Proyectos::recuperarProyectos());
+    echo '<ul>';
+    foreach (DB_Proyectos::recuperarProyectos() as $proyecto){
+        echo '<li>'.$proyecto->mostrarFecha().'</li>';
+    }
+echo '</ul>';
+    die();
 ?>
 <html lang="es">
 
